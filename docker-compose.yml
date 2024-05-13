@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3010:3010"
+    environment:
+      # Add any environment variables needed by your application here
+    volumes:
+      # Add any volumes needed by your application here
