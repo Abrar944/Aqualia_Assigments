@@ -5,8 +5,14 @@ files:
     destination: /var/www/html
 hooks:
   BeforeInstall:
-    - location: before_install.sh
+    - location: scripts/before_install.sh
       timeout: 300
   AfterInstall:
-    - location: after_install.sh
+    - location: scripts/after_install.sh
+      timeout: 300
+  ApplicationStart:
+    - location: scripts/application_start.sh
+      timeout: 300
+  ValidateService:
+    - location: scripts/validate_service.sh
       timeout: 300
