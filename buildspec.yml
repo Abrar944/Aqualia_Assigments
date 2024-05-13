@@ -15,8 +15,8 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image to Amazon ECR...
-      - docker tag node-app:latest 633242779871.dkr.ecr.us-east-1.amazonaws.com/node-app:latest
-      - docker push 633242779871.dkr.ecr.us-east-1.amazonaws.com/node-app:latest
+      - docker tag node-app:latest 633242779871.dkr.ecr.ap-south-1.amazonaws.com/node-app:latest
+      - docker push 633242779871.dkr.ecr.ap-south-1.amazonaws.com/node-app:latest
 
 artifacts:
   files:
